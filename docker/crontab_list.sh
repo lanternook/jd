@@ -129,29 +129,29 @@
 10 0 * * * node /scripts/jd_jdzz.js >> /scripts/logs/jd_jdzz.log 2>&1
 #
 20 13 * * 6 node /scripts/jd_get_share_code.js >> /scripts/logs/jd_get_share_code.log 2>&1
-#
+#京东健康收集
 15-55/20 * * * * node /scripts/jd_health_collect.js >> /scripts/logs/jd_health_collect.log 2>&1
 #
 0 8-23/1 * * * node /scripts/jd_read.js >> /scripts/logs/jd_read.log 2>&1
-#
-10 0,8,11,17 * * * node /scripts/jd_jddj_fruit.js >> /scripts/logs/jd_jddj_fruit.log 2>&1
-#
-5 0,6,12 * * * node /scripts/jd_jddj_bean.js >> /scripts/logs/jd_jddj_bean.log 2>&1
-#
-10 * * * * node /scripts/jd_jddj_collectWater.js >> /scripts/logs/jd_jddj_collectWater.log 2>&1
-#
-5-40/5 * * * * node /scripts/jd_jddj_getPoints.js >> /scripts/logs/jd_jddj_getPoints.log 2>&1
-#
-20 */4 * * * node /scripts/jd_jddj_plantBeans.js >> /scripts/logs/jd_jddj_plantBeans.log 2>&1
-#
+#京东到家果园
+10 0,8,11,17 * * * node /scripts/jddj_fruit.js >> /scripts/logs/jddj_fruit.log 2>&1
+#京东到家bean
+5 0,6,12 * * * node /scripts/jddj_bean.js >> /scripts/logs/jddj_bean.log 2>&1
+#京东到家收集水滴
+10 * * * * node /scripts/jddj_collectWater.js >> /scripts/logs/jddj_collectWater.log 2>&1
+#京东到家getpoints
+5-40/5 * * * * node /scripts/jddj_getPoints.js >> /scripts/logs/jddj_getPoints.log 2>&1
+#京东到家种豆
+20 */4 * * * node /scripts/jddj_plantBeans.js >> /scripts/logs/jddj_plantBeans.log 2>&1
+#零食街
 46 0,1 * * * node /scripts/jd_lsj.js >> /scripts/logs/jd_lsj.log 2>&1
 #
 13 3 * * * node /scripts/jd_drawEntrance.js >> /scripts/logs/jd_drawEntrance.log 2>&1
 #
 13 0 * * * node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1
-#
+#送豆得豆
 5 0,12 * * * node /scripts/jd_SendBean.js >> /scripts/logs/jd_SendBean.log 2>&1
-#
+#许愿池
 8 4,6 * * * node /scripts/jd_wish.js >> /scripts/logs/jd_wish.log 2>&1
 #
 4 0 * * * node /scripts/jd_wxFans.js >> /scripts/logs/jd_wxFans.log 2>&1
@@ -170,7 +170,7 @@
 #
 10 5,18 * * * node /scripts/jd_ylyn.js >> /scripts/logs/jd_ylyn.log 2>&1
 #
-33 1,8,12,19 * * * node /scripts/jd_ks_fruit.js >> /scripts/logs/jd_ks_fruit.log 2>&1
+33 1,8,12,19 * * * node /scripts/ks_fruit.js >> /scripts/logs/ks_fruit.log 2>&1
 #
 15 0-23/1 * * * node /scripts/jd_joy_feedPets.js >> /scripts/logs/jd_joy_feedPets.log 2>&1
 #
@@ -189,16 +189,6 @@
 20 5,10 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1
 #女装盲盒
 45 2,20 * * * node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
-#开卡20
-30 8,2 1-21 9 * node /scripts/jd_opencard20.js >> /scripts/logs/jd_opencard20.log 2>&1
-#开卡21
-28 7,20 1-6 9 * node /scripts/jd_opencard21.js >> /scripts/logs/jd_opencard21.log 2>&1
-#开卡22
-34 5,17 3-13 9 * node /scripts/jd_opencard22.js >> /scripts/logs/jd_opencard22.log 2>&1
-#开卡23
-34 4,16 3-10 9 * node /scripts/jd_opencard23.js >> /scripts/logs/jd_opencard23.log 2>&1
-#开卡24
-24 3,18 6-17 9 * node /scripts/jd_opencard24.js >> /scripts/logs/jd_opencard24.log 2>&1
 #积分换话费
 43 5,17 * * * node /scripts/jd_dwapp.js >> /scripts/logs/jd_dwapp.log 2>&1
 # 领券中心签到
