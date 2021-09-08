@@ -7,7 +7,7 @@ cdle愤怒系列
 smiek2221 joy乐园
 
 ### 青龙拉取仓库命令：
-拉取地址 ql repo https://github.com/lanternook/jd.git "jd_|jx_|dd_|ks_|jddj_|getJDCookie" "" "^jd[^]|USER|utils"
+拉取地址 ql repo https://github.com/lanternook/jd.git "jd_|jx_|dd_|ks_|jddj_|getJDCookie" "" "^jd[^]|USER|utils|sendNotify"
 
 
 v4修改默认库为 https://github.com/lanternook/jd.git  分支修改为main
